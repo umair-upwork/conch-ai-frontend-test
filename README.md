@@ -1,14 +1,36 @@
+# Conch AI Frontend Test
+
+Hello and welcome to our test for our software engineering role! We made this quick test and wish you all the best.
+
+Please create a fork of this repo and submit a link to your repo when you are done.
+
+## Test Description
+
+This project just contains one page: `index.js` (the landing page).
+
+However, the load time for this page is extremely high due to:
+- A .gif video
+- Numerous images
+
+Especially for mobile, the load time can be very high.
+
+## Test Challenge
+
+The challenge is to significantly decrease the load time for the page.
+
+One suggested method may be to cache the images and the gif. However, if you have other ideas or can integrate better strategies, even better!
+
+## Bonus Challenge:
+
+- There is a "Error: Hydration failed" on the page. You don't need to fix this bug (pressing refresh or closing the error) will still cause the page to function. However, if you can find a way to fix this bug, that's a big bonus
+
+## Tech Stack Overview:
 
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
 - [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, Twitter, GitHub, etc.
 - [Prisma](https://www.prisma.io/) – Typescript-first ORM for Node.js
-
-### Platforms
-
-- [Vercel](https://vercel.com/) – Easily preview & deploy changes with git
-- [Railway](https://railway.app/) – Easily provision a PostgreSQL database (no login required)
 
 ### UI
 
@@ -35,7 +57,3 @@
 - [TypeScript](https://www.typescriptlang.org/) – Static type checker for end-to-end typesafety
 - [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
 - [ESLint](https://eslint.org/) – Pluggable linter for Next.js and TypeScript
-
-### Miscellaneous
-
-- [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
