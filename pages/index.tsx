@@ -92,6 +92,7 @@ export default function Home() {
               src="/landing/withoutconch.png"
               width={400}
               height={400}
+              sizes="33vw"
               className="mt-16 rounded-lg object-contain drop-shadow-xl"
             />
           </motion.div>
@@ -133,6 +134,7 @@ export default function Home() {
               src="/landing/withconch.png"
               width={400}
               height={400}
+              sizes="33vw"
               className="mt-16 rounded-lg object-contain opacity-70 drop-shadow-xl"
             />
           </motion.div>
@@ -157,6 +159,7 @@ export default function Home() {
               alt={institution}
               key={i}
               src={`/colleges/${institution}`}
+              sizes="33vw"
               width={
                 institution == "ucla.png" || institution == "waterloo.png"
                   ? 200
@@ -194,6 +197,7 @@ export default function Home() {
           demo={
             <Image
               src="/landing/red.png"
+              sizes="33vw"
               alt="Deploy with Vercel"
               width={450}
               height={450}
@@ -211,6 +215,7 @@ export default function Home() {
           demo={
             <Image
               src="/landing/green.png"
+              sizes="33vw"
               alt="Deploy with Vercel"
               width={450}
               height={450}
