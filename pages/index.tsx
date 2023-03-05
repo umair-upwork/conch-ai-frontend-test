@@ -57,10 +57,8 @@ export default function Home() {
             className="mt-2 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <p>
               Blaze through your assignments with your personal writing
               assistant, and make it AI detection free.
-            </p>
           </motion.p>
           <motion.div
             className="mx-auto mt-6 flex items-center justify-center space-x-5"
@@ -178,10 +176,8 @@ export default function Home() {
           className="mt-2 text-center text-gray-500 md:mx-16 md:text-xl"
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
-          <p>
             Run your essay through our proprietary algorithm and have us rewrite
             it until it becomes detection free
-          </p>
         </motion.p>
       </div>
       <div className="mx-24 grid h-fit w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-4 xl:px-0">
@@ -746,10 +742,8 @@ export default function Home() {
             className="mt-2 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <p>
               Join 20,000+ students who are saving time and doing it worry free
               with our AI Bypasser
-            </p>
           </motion.p>
           <motion.div
             className="mx-auto mt-6 flex items-center justify-center space-x-5"
