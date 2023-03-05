@@ -108,13 +108,17 @@ export default function Home() {
               animate={{ y: 0 }}
               transition={{ delay: 1, type: "spring", stiffness: 65 }}
             >
-              <Image
-                alt="Landing Page Video"
-                src="https://media1.giphy.com/media/aRyoE5bhvSLpF2iU2A/giphy.gif"
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
                 width={600}
                 height={600}
-                className="mt-16 rounded-lg object-contain drop-shadow-xl "
-              />
+                className="mt-16 rounded-lg object-contain drop-shadow-xl"
+              >
+                <source src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjgzMWE0MWQ3M2Q4MmVmMTM5ZTcxN2VmNTQ4ODA0MjcxMWZjYWRjNiZjdD1n/aRyoE5bhvSLpF2iU2A/giphy.mp4" type="video/mp4" />
+              </video>
             </motion.div>
           </motion.div>
 
