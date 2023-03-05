@@ -142,9 +142,10 @@ export default function Home() {
       </div>
       <Image
         alt="Landing Page Video"
-        src="/landing/withConchMobile.svg"
+        src="/landing/withConchMobile.png"
         width={400}
         height={400}
+        sizes="33vw"
         className="rounded-lg object-contain drop-shadow-xl md:hidden"
       />
       <div className="relative  mt-16  h-fit w-5/6 items-center justify-center rounded-lg border-gray-200 bg-white p-8 drop-shadow-xl backdrop-blur-xl">
