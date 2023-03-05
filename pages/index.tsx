@@ -3,15 +3,12 @@ import Layout from "@/components/layout/layout";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import FaqRow from "@/components/home/FAQ/faqRow";
 import { useState } from "react";
-import { useEffect } from "react";
 import mixpanel from "mixpanel-browser";
 import Link from "next/link";
-import { isMobile } from "react-device-detect";
 
 export default function Home() {
   let institutions = [
