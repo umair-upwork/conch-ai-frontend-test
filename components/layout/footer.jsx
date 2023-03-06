@@ -9,7 +9,7 @@ import TikTokIcon from "../../assets/socialIcons/tiktok.png";
 
 function Footer() {
   return (
-    <div className="h-128 w-full items-center border-t border-gray-200 bg-white py-5">
+    <div style={{position: "relative", bottom: "0px"}} className="h-128 w-full items-center border-t border-gray-200 bg-white py-5">
       <div className=" mx-8 my-8 grid grid-cols-1 gap-5 px-5 md:mb-8 md:ml-48  md:grid-cols-3">
         <div className="... flex-1">
           <div className="w-128 flex flex-col">
