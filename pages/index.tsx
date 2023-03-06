@@ -3,15 +3,12 @@ import Layout from "@/components/layout/layout";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import FaqRow from "@/components/home/FAQ/faqRow";
 import { useState } from "react";
-import { useEffect } from "react";
 import mixpanel from "mixpanel-browser";
 import Link from "next/link";
-import { isMobile } from "react-device-detect";
 
 export default function Home() {
   let institutions = [
@@ -57,10 +54,8 @@ export default function Home() {
             className="mt-2 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <p>
               Blaze through your assignments with your personal writing
               assistant, and make it AI detection free.
-            </p>
           </motion.p>
           <motion.div
             className="mx-auto mt-6 flex items-center justify-center space-x-5"
@@ -94,6 +89,7 @@ export default function Home() {
               src="/landing/withoutconch.png"
               width={400}
               height={400}
+              sizes="33vw"
               className="mt-16 rounded-lg object-contain drop-shadow-xl"
             />
           </motion.div>
@@ -110,13 +106,17 @@ export default function Home() {
               animate={{ y: 0 }}
               transition={{ delay: 1, type: "spring", stiffness: 65 }}
             >
-              <Image
-                alt="Landing Page Video"
-                src="https://media1.giphy.com/media/aRyoE5bhvSLpF2iU2A/giphy.gif"
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
                 width={600}
                 height={600}
-                className="mt-16 rounded-lg object-contain drop-shadow-xl "
-              />
+                className="mt-16 rounded-lg object-contain drop-shadow-xl"
+              >
+                <source src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjgzMWE0MWQ3M2Q4MmVmMTM5ZTcxN2VmNTQ4ODA0MjcxMWZjYWRjNiZjdD1n/aRyoE5bhvSLpF2iU2A/giphy.mp4" type="video/mp4" />
+              </video>
             </motion.div>
           </motion.div>
 
@@ -131,6 +131,7 @@ export default function Home() {
               src="/landing/withconch.png"
               width={400}
               height={400}
+              sizes="33vw"
               className="mt-16 rounded-lg object-contain opacity-70 drop-shadow-xl"
             />
           </motion.div>
@@ -138,9 +139,10 @@ export default function Home() {
       </div>
       <Image
         alt="Landing Page Video"
-        src="/landing/withConchMobile.svg"
+        src="/landing/withConchMobile.png"
         width={400}
         height={400}
+        sizes="33vw"
         className="rounded-lg object-contain drop-shadow-xl md:hidden"
       />
       <div className="relative  mt-16  h-fit w-5/6 items-center justify-center rounded-lg border-gray-200 bg-white p-8 drop-shadow-xl backdrop-blur-xl">
@@ -155,6 +157,7 @@ export default function Home() {
               alt={institution}
               key={i}
               src={`/colleges/${institution}`}
+              sizes="33vw"
               width={
                 institution == "ucla.png" || institution == "waterloo.png"
                   ? 200
@@ -178,10 +181,8 @@ export default function Home() {
           className="mt-2 text-center text-gray-500 md:mx-16 md:text-xl"
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
-          <p>
             Run your essay through our proprietary algorithm and have us rewrite
             it until it becomes detection free
-          </p>
         </motion.p>
       </div>
       <div className="mx-24 grid h-fit w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-4 xl:px-0">
@@ -194,6 +195,7 @@ export default function Home() {
           demo={
             <Image
               src="/landing/red.png"
+              sizes="33vw"
               alt="Deploy with Vercel"
               width={450}
               height={450}
@@ -211,6 +213,7 @@ export default function Home() {
           demo={
             <Image
               src="/landing/green.png"
+              sizes="33vw"
               alt="Deploy with Vercel"
               width={450}
               height={450}
@@ -746,10 +749,8 @@ export default function Home() {
             className="mt-2 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <p>
               Join 20,000+ students who are saving time and doing it worry free
               with our AI Bypasser
-            </p>
           </motion.p>
           <motion.div
             className="mx-auto mt-6 flex items-center justify-center space-x-5"
